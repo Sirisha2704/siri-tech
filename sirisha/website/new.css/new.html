@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .main{
+            height: 400px;
+            
+            background-color: rgb(240, 5, 111);
+            color:black;
+            height: 100vh;
+            width: 100%;
+            text-align:center;
+        }
+        .sub1{
+            height: 150px ;
+            width: 150px;
+            background-color: rgb(247, 255, 9);
+            position: relative;
+            animation-name: new;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes new{
+            0%{left: 0px;top: 0px;background-color: burlywood; }
+            25%{top: 0px;left: 1000px; background-color: darkkhaki;}
+            50%{top: 500px;left: 1000px;background-color: darksalmon; }
+            75%{left: 0px;top: 500px; background-color: khaki;}
+            100%{top: 0px;left: 0px;background-color: yellow;}
+        }
+        .sub2{
+            height: 150px ;
+            width: 150px;
+            background-color: rgb(3, 226, 251);
+            position: relative;
+            animation-name: newani;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+           
+        }
+        @keyframes newani{
+            0%{top: 0px;left: 0px; background-color: bisque; }
+            25%{left: 0px;top: 500px;background-color: aquamarine; }
+            50%{left: 1000px;top: 500px;background-color: blue; }
+            75%{top: 0px;left: 1000px;background-color:blueviolet ; }
+            100%{left: 0px;top: 0px; background-color: aqua;}
+        }
+        .about{
+            height: 700px;
+            background-color: brown;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            gap: 5%;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .out1{
+            height: 150px;
+            width: 150px;
+            background-color:rgb(252, 203, 8);
+            animation-name:newani1;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+        }
+        @keyframes newani1{
+            from{background-color: rgb(191, 4, 247); opacity: 0;transform: translatey(-400px);}
+            to{background-color: rgb(240, 197, 25);opacity: 1;transform: translatey(0px);}
+        }
+        .out2{
+            height: 150px;
+            width: 150px;
+            background-color: rgb(240, 197, 25);  
+            animation-name:newani2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+        }
+        @keyframes newani2{
+            from{background-color:  rgb(191, 4, 247);opacity: 0.5;transform: translatex(-200px);}
+            to{background-color:rgb(240, 197, 25);opacity: 1;transform: translatex(0px);}
+        
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+       
+        <div class="sub1"> <h1>welcome</h1></div>
+        <div class="sub2"> <h1>animation</h1></div>
+    </div>
+    <div class="about">
+       <div class="out1">
+        <img src="https://img.freepik.com/free-photo/dark-style-halloween-scene-with-ghosts-pumpkins_23-2151774660.jpg?ga=GA1.1.457391456.1728555555&semt=ais_hybrid" width="100%" >
+       </div>
+       <div class="out2">
+        <img src="https://www.freepik.com/free-ai-image/ghosts-pumpkins-halloween-dark-style_299702658.htm#fromView=search&page=1&position=31&uuid=100366ce-7b04-42fc-8350-7ac4748d52da"  width="100%">
+       </div>
+       </div>    
+</body>
+</html>

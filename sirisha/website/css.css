@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+    background-color:rgb(0, 0, 0);
+    color: rgb(236, 0, 0);
+    padding: 2%;
+    list-style-type: none;
+    position:sticky;
+    top: 0;
+}
+
+
+#header ul a:hover{
+   color: rgb(240, 95, 5);
+}
+#header ul{
+    list-style-type: none;
+    padding-left: 2%;
+    display: flex ;
+    gap: 10px;
+    justify-content: flex-end;
+}
+#header img{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#home{
+    height: 400px;
+    background-color: aqua;
+    color:rgb(0, 247, 186);
+    background-image: url('https://media.istockphoto.com/id/1415206816/photo/car-protection-and-insurance-concept.jpg?b=1&s=612x612&w=0&k=20&c=ikVeCeIfWwUuigaAPebfy6Tr1wFeHqvRSTpjsghWY5s=' );
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    text-align: center;
+}
+
+
+
+
+
+
+#about{
+    height: 400px;
+    background-color: rgb(49, 150, 200);
+    background-image: url('data:image/jpeg;base64,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');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+#services{
+    background-color: rgb(187, 49, 200);
+    height: 400px;
+    color: aliceblue;
+    background-image: url('https://img.freepik.com/free-photo/black-flower-card-ai-generated_268835-7008.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+}
+#contacts{
+    background-color: bisque;
+    height: 400px;
+    color: blueviolet;
+    background-image: url('https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?semt=ais_hybrid');
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center;
+    
+}
+.child{
+    height: 400px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+.child img{
+   padding-left: 700px;
+}
+
+
+
+
+
+
+
+

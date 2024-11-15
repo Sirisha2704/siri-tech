@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="lay.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Géniale Hotel</title>
+  <style>
+    .mynav {
+      background-color: rgba(0, 128, 0, 0) !important;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+    }
+
+
+    .navbar-nav .nav-item .nav-link:hover {
+      background-color: rgb(249, 163, 3);
+      ;
+      border-radius: 5px;
+    }
+
+    .text {
+      position: absolute;
+      top: 45%;
+      color: rgb(249, 163, 3);
+      font-size: 240px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .text2 {
+      position: absolute;
+      top: 50%;
+      color: rgb(255, 255, 255);
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .icon {
+      position: absolute;
+      width: 35%;
+      left: 700px;
+      top: 15px;
+      height: 100px;
+    }
+
+    .container {
+background-color: black;
+      color: rgb(253, 243, 243);
+      position: absolute;
+      top: 60%;
+      left: 5%;
+    }
+
+    .about {
+      background-color: beige;
+      color: rgb(8, 8, 8);
+      top: 200%;
+      text-align: left;
+    }
+
+    .content {
+      display: flex;
+
+
+    }
+
+    .small {
+      bottom: 20%;
+      background-color: #FFD43B;
+      color: white;
+      display: flex;
+    }
+
+    .img1 {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      animation-name: newani1;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes newani1 {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+
+      top {
+        opacity: 1;
+        transform: translateY(50px);
+      }
+    }
+
+    .img2 {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      animation-name: newani1;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes newani2 {
+      from {
+        opacity: 0;
+        transform: translateY(1px);
+      }
+
+      top {
+        opacity: 1;
+        transform: translateY(-50px);
+      }
+    }
+
+    .offers {
+      background-color: bisque;
+      color: indigo;
+
+    }
+
+    .images {
+      position: relative;
+    }
+
+    .pic {
+      position: absolute;
+      top: 70%;
+      text-align: center;
+    }
+
+    .img4 {
+      position: relative;
+    }
+
+    .img4 p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: none;
+    }
+    .img4 img{
+      height: 250px;
+    }
+    .img4:hover  p {
+      display: block;
+    }
+
+
+    .Rooms {
+      background-color: black;
+      color: rgb(241, 239, 243);
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="mynav">
+
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent ">
+          <ul class="nav justify-content-center">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link   dropdown-toggle active" role="button" data-bs-toggle="dropdown" aria-current="page"
+                  href="#">Home</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"> Home Image</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Home Slider</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Home Vedio</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Home Slideshow</a></li>
+              </li>
+            </ul>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Room
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Room 01</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Room 02</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Room 03</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Room Detail</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+            </li>
+          </ul>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Service
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Facilities</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Amenities</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Offers</a></li>
+          </li>
+          </ul>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Pages
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Restaurant</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Spa & Wellness</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Pricing</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Team</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Team Single</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">FAQ's</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Image Gallery</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Vedio Gallery</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">404 Page</a></li>
+          </li>
+          </ul>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Blog
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Blog 1</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Blog 2</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Post Single</a></li>
+          </li>
+          </ul>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Contact</a>
+          </li>
+          </ul>
+        </div>
+        <div class="icon ">
+
+          <ul>
+            <li>
+              <i class="fa-solid fa-phone" style="color: #FFD43B;"> 040-244655</i>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+
+    </nav>
+
+  </div>
+  <div class="main">
+    <img src="https://img.freepik.com/premium-photo/lobby-with-large-window-large-rug-floor_1262102-2903.jpg?w=740"
+      width="100%">
+    
+
+    <div class="text">
+      <h4> Géniale Luxury Hotel</h4>
+    </div>
+    <div class="text2">
+      <h1>
+        <pre><i>Enjoy a luxury experience</i></pre>
+      </h1>
+    </div>
+  </div>
+
+
+  <div class="about p-5">
+    <h1>About<br>GENIALE LUXURY HOTEL<br> </h1>
+    <div class="row p-3">
+      <div class="col p-5">
+        <h5>At <b><span style="color: crimson">Géniale Hotel</span></b>, we offer a blend of comfort, luxury, and
+          exceptional service in the heart of Vizag.
+          Whether for business or leisure, our stylish rooms, modern amenities, and dedicated staff ensure a memorable
+          stay.
+          Experience personalized hospitality that makes every moment extraordinary.</h5>
+
+      </div>
+      <div class=" img1 col p-5">
+        <img src="https://i.pinimg.com/736x/f6/ae/e9/f6aee9777749c73d2e4ff77e6e94675a.jpg" alt="" width="300px" ,
+          height="500px">
+      </div>
+      <div class=" img2  col p-2">
+        <img src="https://img.freepik.com/free-photo/hotel-lobby_23-2149397559.jpg?semt=ais_hybrid" alt="" width="300px"
+          , height="500px">
+      </div>
+    </div>
+    <button type="button" class="btn btn-danger">About Hotel</button>
+  </div>
+
+
+
+
+
+  <div class="offers p-5 text-center">
+    <h2>EXCLUSIVE OFFERS</h2>
+    <div class="images  row p-5">
+      <div class="img4 col-sm-3 p-1 ">
+        <img
+          src="https://img.freepik.com/free-photo/asian-woman-enjoying-with-breakfast-bed_74190-9856.jpg?semt=ais_hybrid"
+          width="100%" alt="">
+        <p class="pic">Stay</p>
+      </div>
+      <div class="img4 col-sm-3 p-1 ">
+        <img
+          src="https://img.freepik.com/free-photo/medium-shot-woman-working-luxury-restaurant_23-2150598369.jpg?semt=ais_hybrid"
+          width="100%" alt="">
+        <P>Restaurant</P>
+      </div>
+      <div class="img4 col-sm-3 p-1 ">
+        <span><img src="https://img.freepik.com/free-photo/massage-concept-with-woman_23-2147816942.jpg?semt=ais_hybrid"
+            width="100%" alt=""></span>
+        <p class="pic">Spa</p>
+      </div>
+      <div class="img4 col-sm-3 p-1 ">
+        <span><img
+            src="https://img.freepik.com/free-photo/just-married-couple-night-city-walk_7502-4930.jpg?semt=ais_hybrid"
+            width="100%" alt=""></span>
+        <p class="pic">Weddings</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="Rooms">
+    <div class="suite p-5">
+      <div class="row">
+        <div class="col p-4">
+          <h6> Luxury Hotel Rooms</h6><br>
+          <h1 style="padding-top: 2%;">Rooms & Suites</h1>
+        </div>
+
+        <div class="col p-4">
+          <p>Our luxury hotel offers elegantly designed rooms, from serene Deluxe Rooms with stunning views to expansive
+            Executive Suites. Indulge in the opulence of our Luxury Suites with spacious living areas, or experience
+            unparalleled luxury in the Presidential Suite with exclusive amenities. Perfect for business, romance, or
+            relaxation, every stay is unforgettable.</p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-inner">
+        <div class="carousel-item active ">
+          <img
+            src="https://img.freepik.com/free-photo/luxury-bedroom-interior-with-rich-furniture-scenic-view-from-walkout-deck_1258-111483.jpg?ga=GA1.1.736204316.1731392172&semt=ais_hybrid"
+            width="100%" height="500px" alt="...">
+        </div>
+        <div class="carousel-item mx=5">
+          <img
+            src="https://img.freepik.com/free-photo/3d-rendering-beautiful-comtemporary-luxury-bedroom-suite-hotel-with-tv_105762-2058.jpg?t=st=1731648545~exp=1731652145~hmac=5a6c5d477be508c2d9b3217bbfc89261c3f36784aa7787596a66cf0de37d30c5&w=740"
+            class="d-block w-100" width="100%" height="500px" alt="...">
+        </div>
+        <div class="carousel-item ">
+          <img
+            src="https://img.freepik.com/free-photo/empire-state-building-seen-from-apartment_23-2150897745.jpg?ga=GA1.1.736204316.1731392172&semt=ais_hybrid"
+            class="d-block w-100" width="100%" height="500px" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+
+
+</body>
+
+</html>
